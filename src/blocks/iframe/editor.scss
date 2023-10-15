@@ -1,0 +1,71 @@
+/*
+* Style Works for Editor Only
+*/
+
+.wp-block-wpxero-iframe-iframe {
+	border: none;
+	margin: 0;
+	// padding: 10px;
+	display: flex;
+	// overflow: hidden;
+
+	.wpxero-iframe--editor {
+		position: relative;
+		width: 100%;
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			bottom: 0;
+			background-color: transparent;
+			opacity: 1;
+			cursor: pointer;
+			z-index: 1;
+		}
+
+		&:hover {
+			&::before {
+				transition: all .3s ease-in-out;
+				background: red;
+				opacity: 0.3;
+			}
+		}
+	}
+
+	.wpxero-iframe--warning {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+
+		input {
+			padding: 10px;
+		}
+
+
+		.wpxero-submit-button {
+
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 10px 30px;
+			margin-bottom: 20px;
+		}
+
+		.wpxero-input-url {
+			flex: 3;
+		}
+	}
+
+
+	iframe {
+		margin: 0;
+		padding: 0;
+		display: block;
+	}
+}

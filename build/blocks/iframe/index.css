@@ -1,0 +1,60 @@
+/*!******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/iframe/editor.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************/
+/*
+* Style Works for Editor Only
+*/
+.wp-block-wpxero-iframe-iframe {
+  border: none;
+  margin: 0;
+  display: flex;
+}
+.wp-block-wpxero-iframe-iframe .wpxero-iframe--editor {
+  position: relative;
+  width: 100%;
+}
+.wp-block-wpxero-iframe-iframe .wpxero-iframe--editor::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  opacity: 1;
+  cursor: pointer;
+  z-index: 1;
+}
+.wp-block-wpxero-iframe-iframe .wpxero-iframe--editor:hover::before {
+  transition: all 0.3s ease-in-out;
+  background: red;
+  opacity: 0.3;
+}
+.wp-block-wpxero-iframe-iframe .wpxero-iframe--warning {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.wp-block-wpxero-iframe-iframe .wpxero-iframe--warning input {
+  padding: 10px;
+}
+.wp-block-wpxero-iframe-iframe .wpxero-iframe--warning .wpxero-submit-button {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+}
+.wp-block-wpxero-iframe-iframe .wpxero-iframe--warning .wpxero-input-url {
+  flex: 3;
+}
+.wp-block-wpxero-iframe-iframe iframe {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/*# sourceMappingURL=index.css.map*/
